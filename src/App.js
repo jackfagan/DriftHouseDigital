@@ -53,7 +53,7 @@ function App() {
             </div>
             <div className="service-text">
               <h3>STANDARD OF EXCELLENCE</h3>
-              <p>Lorem ipsum dolor sit amet</p>
+              <p>We promise to deliver only the best products and services</p>
               </div>
           </div> 
 
@@ -63,7 +63,7 @@ function App() {
             </div>
             <div className="service-text">
               <h3>LATEST TECHNOLIOGIES</h3>
-              <p>Lorem ipsum dolor sit amet</p>
+              <p>We work ahead of industry standards with the newest technologies</p>
              </div>
           </div> 
 
@@ -73,12 +73,12 @@ function App() {
             </div>
             <div className="service-text desktop-padding-top">
               <h3>OPEN COMMUNICATION</h3>
-              <p>Lorem ipsum dolor sit amet</p>
+              <p>Our customer service at the forefront of our agency</p>
             </div>
           </div> 
         </div> 
-        </FadeInSection>
         <hr className="divider" />
+        </FadeInSection>
 
           <div className="contact-modal">
             <h3>Fancy a chat?</h3>
