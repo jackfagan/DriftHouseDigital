@@ -5,7 +5,7 @@ import rating from './images/rating.png';
 import electricity from './images/electricity.png';
 import './App.scss';
 import React from 'react';
-import instagram from './images/instagram.svg';
+import instagram from './images/instagram.png.webp';
 import phone from './images/phone.png';
 import ContactForm from './components/ContactForm';
 import ContentCards from './components/ContentCards';
@@ -33,19 +33,17 @@ function App() {
         </div>
       </header>
       <body>
+        
         <div className="introduction">
         <FadeInSection>
+          <hr className="divider" />
           <h3>Welcome to Drift House Digital, where innovation meets design excellence. We are a forward-thinking digital agency passionate about creating stunning, high-performance websites that set your brand apart. With a dedicated team of visionaries and technical experts, we turn your digital dreams into reality. </h3>
           <h3>Explore the limitless possibilities of online success with us.</h3> 
+          <hr className="divider" />
         </FadeInSection>
         </div>      
 
-        {/* <div className="our_services"> 
-          <FadeInSection>
-            <ContentCards />
-          </FadeInSection>
-        </div> */}
-
+      
         <FadeInSection>
         <div className="service-block">
         <h2 className="blue-text">Our Guarantees</h2>
@@ -80,9 +78,10 @@ function App() {
           </div> 
         </div> 
         </FadeInSection>
+        <hr className="divider" />
 
           <div className="contact-modal">
-            <h3>Contact Us</h3>
+            <h3>Fancy a chat?</h3>
              <ContactForm />
           </div>
 
