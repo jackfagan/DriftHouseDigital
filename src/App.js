@@ -38,6 +38,7 @@ function App() {
         <FadeInSection>
           <hr className="divider" />
           <h3>Welcome to Drift House Digital, where innovation meets design excellence. We are a forward-thinking digital agency passionate about creating stunning, high-performance websites that set your brand apart. With a dedicated team of visionaries and technical experts, we turn your digital dreams into reality. </h3>
+          <br></br>          <br></br>
           <h3>Explore the limitless possibilities of online success with us.</h3> 
           <hr className="divider" />
         </FadeInSection>

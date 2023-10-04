@@ -47,7 +47,7 @@ class ContactForm extends Component {
         email: email,
         number: number,
       };
-      emailjs.send('service_vvfdt8c', 'template_hb1dv4b', templateParams, 'user_hPRLmapB4SAjTHf4l51O5');
+      emailjs.send('service_1wsipth', 'template_0guzkss', templateParams, 'JQvfmVQAl_wtvH1Qp');
 
       console.log(`
         --SUBMITTING--
@@ -57,9 +57,23 @@ class ContactForm extends Component {
 
       `);
 
+      const thanksMes = document.getElementById('thanks-message');
+      if (thanksMes) {
+        thanksMes.style.display = 'block';
+      }
+
+      const contactError = document.getElementById('error-message');
+      if (contactError) {
+        contactError.style.display = 'none';
+      }
+
       this.resetForm();
     } else {
       // Handle form validation failure
+      const contactError = document.getElementById('error-message');
+      if (contactError) {
+        contactError.style.display = 'block';
+      }
       console.error('FORM INVALID - DISPLAY ERROR MESSAGE');
     }
   };
@@ -69,7 +83,7 @@ class ContactForm extends Component {
     this.setState({
       name: '',
       email: '',
-      subject: '',
+      number: '',
     });
   }
 
@@ -110,7 +124,7 @@ class ContactForm extends Component {
                   noValidate
                 ></input>
                 {formErrors.name.length > 0 && (
-                  <span className='errorMessage'>{formErrors.name}</span>
+                  <span className='errorMessage'>Please enter a name</span>
                 )}
               </div>
             </label>
@@ -127,7 +141,7 @@ class ContactForm extends Component {
                   noValidate
                 ></input>
                 {formErrors.email.length > 0 && (
-                  <span className='errorMessage'>{formErrors.email}</span>
+                  <span className='errorMessage'>Please enter an email</span>
                 )}
               </div>
             </label>
@@ -145,6 +159,8 @@ class ContactForm extends Component {
                 ></input>
               </div>
             </label>
+            <p id="error-message">Please ensure all fields are entered correctly</p>
+            <p id="thanks-message">Thank you, we will be in touch soon</p>
           </div>
           <button className='submit-btn' type='submit'>
             Submit
