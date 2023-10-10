@@ -63,7 +63,7 @@ function App() {
               <img className="service-icon margin" src={electricity} alt="description of image"/>
             </div>
             <div className="service-text">
-              <h3>LATEST TECHNOLIOGIES</h3>
+              <h3>LATEST TECHNOLOGIES</h3>
               <p>We work ahead of industry standards with the newest technologies</p>
              </div>
           </div> 
